@@ -14,6 +14,20 @@ pnpm dev
 bun dev
 ```
 
+
+<!-- env -->
+NEXT_PUBLIC_BASE_URL=https://native-server-beta.vercel.app
+NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyBiOsxGjxPnf8IYXFR6PpevDaxS-BjVmLY
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=task-manager-2acc1.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=task-manager-2acc1
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=task-manager-2acc1.appspot.com
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=71750763467
+NEXT_PUBLIC_FIREBASE_APP_ID=1:71750763467:web:9153e5e8f9606553246c4e
+
+
+
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
