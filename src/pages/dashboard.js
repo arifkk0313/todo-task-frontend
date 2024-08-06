@@ -24,7 +24,7 @@ const Dashboard = () => {
   const [sortOrder, setSortOrder] = useState('asc');
 
   const fetchTasks = async () => {
-    try {
+    try {      
       const response = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}${routes.task.getOrCreate}`, { headers: getHeaders() });
       const tasksData = response.data;
       const tasksByColumn = tasksData.reduce((acc, task) => {

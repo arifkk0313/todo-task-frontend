@@ -53,8 +53,9 @@ export default function LoginPage() {
           localStorage.setItem('token', data.token); // Store actual token received from API
           toast.success('Login successful!');
           setTimeout(() => {
-            router.push('/'); // Redirect to dashboard or home page
-          }, 2000);
+            // router.push('/');
+            window.location.reload()
+          }, 1000);
         } else {
           setErrors({ form: response.data.message }); // Set error message from API response
           toast.error(response.data.message);
@@ -92,8 +93,9 @@ export default function LoginPage() {
         localStorage.setItem("token" , data.token)
         toast.success(`"Logged In Successfully`);
         setTimeout(() => {
+        router.push('/')
        window.location.reload()
-        }, 2000);
+        }, 1000);
       } else {
         setErrors({ form: response.data.message });
         toast.error(response.data.message);
